@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E96A1DC2999D44F00E293BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96A1DB2999D44F00E293BF /* AppDelegate.swift */; };
+		0E96A1DE2999D44F00E293BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96A1DD2999D44F00E293BF /* SceneDelegate.swift */; };
+		0E96A1E02999D44F00E293BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96A1DF2999D44F00E293BF /* ViewController.swift */; };
+		0E96A1E32999D44F00E293BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E96A1E12999D44F00E293BF /* Main.storyboard */; };
+		0E96A1E52999D45000E293BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E96A1E42999D45000E293BF /* Assets.xcassets */; };
+		0E96A1E82999D45000E293BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E96A1E62999D45000E293BF /* LaunchScreen.storyboard */; };
+		0E96A1F12999D4A200E293BF /* CGRPCZlib in Frameworks */ = {isa = PBXBuildFile; productRef = 0E96A1F02999D4A200E293BF /* CGRPCZlib */; };
+		0E96A1F32999D4A200E293BF /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 0E96A1F22999D4A200E293BF /* GRPC */; };
+		0E96A1F52999D4A200E293BF /* protoc-gen-grpc-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 0E96A1F42999D4A200E293BF /* protoc-gen-grpc-swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E96A1D82999D44F00E293BF /* grpc-swift-wrapped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grpc-swift-wrapped.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E96A1DB2999D44F00E293BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E96A1DD2999D44F00E293BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0E96A1DF2999D44F00E293BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E96A1E22999D44F00E293BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E96A1E42999D45000E293BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E96A1E72999D45000E293BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E96A1E92999D45000E293BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E96A1D52999D44F00E293BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E96A1F32999D4A200E293BF /* GRPC in Frameworks */,
+				0E96A1F12999D4A200E293BF /* CGRPCZlib in Frameworks */,
+				0E96A1F52999D4A200E293BF /* protoc-gen-grpc-swift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E96A1CF2999D44F00E293BF = {
+			isa = PBXGroup;
+			children = (
+				0E96A1DA2999D44F00E293BF /* grpc-swift-wrapped */,
+				0E96A1D92999D44F00E293BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E96A1D92999D44F00E293BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E96A1D82999D44F00E293BF /* grpc-swift-wrapped.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E96A1DA2999D44F00E293BF /* grpc-swift-wrapped */ = {
+			isa = PBXGroup;
+			children = (
+				0E96A1DB2999D44F00E293BF /* AppDelegate.swift */,
+				0E96A1DD2999D44F00E293BF /* SceneDelegate.swift */,
+				0E96A1DF2999D44F00E293BF /* ViewController.swift */,
+				0E96A1E12999D44F00E293BF /* Main.storyboard */,
+				0E96A1E42999D45000E293BF /* Assets.xcassets */,
+				0E96A1E62999D45000E293BF /* LaunchScreen.storyboard */,
+				0E96A1E92999D45000E293BF /* Info.plist */,
+			);
+			path = "grpc-swift-wrapped";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E96A1D72999D44F00E293BF /* grpc-swift-wrapped */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E96A1EC2999D45000E293BF /* Build configuration list for PBXNativeTarget "grpc-swift-wrapped" */;
+			buildPhases = (
+				0E96A1D42999D44F00E293BF /* Sources */,
+				0E96A1D52999D44F00E293BF /* Frameworks */,
+				0E96A1D62999D44F00E293BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "grpc-swift-wrapped";
+			packageProductDependencies = (
+				0E96A1F02999D4A200E293BF /* CGRPCZlib */,
+				0E96A1F22999D4A200E293BF /* GRPC */,
+				0E96A1F42999D4A200E293BF /* protoc-gen-grpc-swift */,
+			);
+			productName = "grpc-swift-wrapped";
+			productReference = 0E96A1D82999D44F00E293BF /* grpc-swift-wrapped.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E96A1D02999D44F00E293BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					0E96A1D72999D44F00E293BF = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 0E96A1D32999D44F00E293BF /* Build configuration list for PBXProject "grpc-swift-wrapped" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E96A1CF2999D44F00E293BF;
+			packageReferences = (
+				0E96A1EF2999D4A200E293BF /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
+			productRefGroup = 0E96A1D92999D44F00E293BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E96A1D72999D44F00E293BF /* grpc-swift-wrapped */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E96A1D62999D44F00E293BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E96A1E82999D45000E293BF /* LaunchScreen.storyboard in Resources */,
+				0E96A1E52999D45000E293BF /* Assets.xcassets in Resources */,
+				0E96A1E32999D44F00E293BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E96A1D42999D44F00E293BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E96A1E02999D44F00E293BF /* ViewController.swift in Sources */,
+				0E96A1DC2999D44F00E293BF /* AppDelegate.swift in Sources */,
+				0E96A1DE2999D44F00E293BF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0E96A1E12999D44F00E293BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E96A1E22999D44F00E293BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E96A1E62999D45000E293BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E96A1E72999D45000E293BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E96A1EA2999D45000E293BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0E96A1EB2999D45000E293BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E96A1ED2999D45000E293BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B95726BXS6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "grpc-swift-wrapped/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Citilink.grpc-swift-wrapped";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E96A1EE2999D45000E293BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B95726BXS6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "grpc-swift-wrapped/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Citilink.grpc-swift-wrapped";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E96A1D32999D44F00E293BF /* Build configuration list for PBXProject "grpc-swift-wrapped" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E96A1EA2999D45000E293BF /* Debug */,
+				0E96A1EB2999D45000E293BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E96A1EC2999D45000E293BF /* Build configuration list for PBXNativeTarget "grpc-swift-wrapped" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E96A1ED2999D45000E293BF /* Debug */,
+				0E96A1EE2999D45000E293BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E96A1EF2999D4A200E293BF /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E96A1F02999D4A200E293BF /* CGRPCZlib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E96A1EF2999D4A200E293BF /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = CGRPCZlib;
+		};
+		0E96A1F22999D4A200E293BF /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E96A1EF2999D4A200E293BF /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+		0E96A1F42999D4A200E293BF /* protoc-gen-grpc-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E96A1EF2999D4A200E293BF /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = "protoc-gen-grpc-swift";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0E96A1D02999D44F00E293BF /* Project object */;
+}
